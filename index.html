@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+
+    <!-- Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>HIEU NGO</title>
+    <link rel="icon" href="/assets/img/icon.png">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <!--Intro animation-->
+    <!-- <div class="intro">
+        <h1 class="logo-header">
+            <span class="logo">W</span><span class="logo">e</span><span class="logo">l</span><span
+                class="logo">c</span><span class="logo">o</span><span class="logo">m</span><span class="logo">e</span>
+        </h1>
+    </div> -->
+
+    <div id="particles-js"></div>
+
+    <header class="l-header" id="head">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav_logo">
+                    <img src="/assets/img/logoV1.png" alt="">
+                </a>
+            </div>
+
+            <div class="nav_menu" id="nav-menu">
+                <ul class="nav_list" id="navlist">
+                    <li class="nav_item"><a href="#home" class="nav_link _active">Home</a></li>
+                    <li class="nav_item"><a href="#about" class="nav_link">About</a></li>
+                    <li class="nav_item"><a href="#skills" class="nav_link">Skills</a></li>
+                    <li class="nav_item"><a href="#work" class="nav_link">Projects</a></li>
+                    <li class="nav_item"><a href="#contact" class="nav_link">Contact</a></li>
+
+                    <!--Dark mode toggle-->
+                    <div class="toggle-container">
+                        <input type="checkbox" id="toggle" name="toggle">
+                        <label class="lab" for="toggle"><i class='bx bxs-moon'></i></label>
+                    </div>
+                </ul>
+            </div>
+
+            <div class="nav_toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+        <!-- HOME -->
+        <section class="home bd-grid" id="home">
+            <div class="home_data">
+                <h1 class="home_title">Hi, <br>
+                    I'm <span class="home_title-color">HIEU NGO</span><br> <span id="autoWrite"></span></h1>
+
+                <a href="#contact" class="button">Contact</a>
+            </div>
+
+            <div class="home_social">
+                <a href="https://www.linkedin.com/in/mrpojskic/" target="_blank" class="home_social-icon"><i
+                        class="bx bxl-linkedin"></i></a>
+                <a href="https://github.com/spojskic" target="_blank" class="home_social-icon"><i
+                        class="bx bxl-github"></i></a>
+                <a href="https://www.behance.net/safetpojskic" target="_blank" class="home_social-icon"><i
+                        class="bx bxl-behance"></i></a>
+            </div>
+
+            <div class="home_img">
+                <img src="/assets/img/mev2.png" alt="">
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section class="about section" id="about">
+            <h2 class="section-title">About</h2>
+
+            <div class="about_container bd-grid">
+                <div class="about_img">
+                    <img src="/assets/img/meV1.png" alt="">
+                </div>
+                <!-- <div class="details-container">
+                    <i class='bx bxs-graduation box-icon'"></i>
+                    <p>HCMUTE</p>
+                    
+                    <p>06/2022 - 03/2024 <br />STEM Teacher</p>
+                </div> -->
+                <div class=" about_text_container ">
+                    <div class="row align-items-start g-3">
+                        <div class="col-md-4">
+                            <div class="p-3 rounded-3 more-about-bg text-center d-flex flex-column align-items-center">
+                                <i class="bi bi-mortarboard-fill icon-large"></i>
+                                <h5 class="custom-underline">HCMUTE</h5>
+                                <p class="mb-0">2020 - 2024</p>
+                                <p class="mb-0">Computer Engineering</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="p-3 rounded-3 more-about-bg text-center d-flex flex-column align-items-center">
+                                <i class="bi bi-briefcase icon-large"></i>
+                                <h5 class="custom-underline">VIETTEL INTERN</h5>
+                                <p class="mb-0">2020 - 2024</p>
+                                <p class="mb-0">Device Tester</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="p-3 rounded-3 more-about-bg text-center d-flex flex-column align-items-center">
+                                <i class="bi bi-briefcase-fill icon-large"></i>
+                                <h5 class="custom-underline">VIETTEL NETWORK</h5>
+                                <p class="mb-0">2020 - 2024</p>
+                                <p class="mb-0">R&D Engineer</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <p class=" about_text mt-4">After three years at the
+                        university, I have
+                        learned the
+                        basics and want to
+                        put
+                        them to use in the real world to become a professional engineer. I have
+                        accumulated this
+                        knowledge through specialized courses such as embedded systems and loT,
+                        RTOS, data
+                        structures
+                        and algorithms, and C/C++ programming,... I'm looking for a suitable
+                        position to learn and
+                        grow,
+                        as well as contribute to the company's most practical values and the needs
+                        of customers.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section class="skills section" id="skills">
+            <h2 class="section-title">Experience</h2>
+            <div class="skills_container bd-grid">
+
+                <div class="container text-center">
+                    <div class="row gx-5 g-2">
+                        <div class="col-6 skills_item skills_data">
+                            <i class="bi bi-terminal-fill skills_icon"></i>
+                            <div class="m-2">
+                                <p style="font-size: 1.1rem;"><strong>Master C/C++</strong></p>
+                                <p>&bull; Master STM32, ESP32 for coding something it actuly help people</p>
+                            </div>
+                        </div>
+                        <div class="col-6 skills_item skills_data">
+                            <i class="bi bi-terminal-fill skills_icon"></i>
+                            <div class="m-2">
+                                <p style="font-size: 1.1rem;"><strong>Experience MCU</strong></p>
+                                <p>&bull; Master STM32, ESP32 for coding something it actuly help people</p>
+                            </div>
+                        </div>
+                        <div class="col-6 skills_item skills_data">
+                            <i class="bi bi-terminal-fill skills_icon"></i>
+                            <div class="m-2">
+                                <p style="font-size: 1.1rem;"><strong>Experience communication</strong></p>
+                                <p>&bull; Uart I2C SPI </p>
+                            </div>
+                        </div>
+                        <div class="col-6 skills_item skills_data">
+                            <i class="bi bi-terminal-fill skills_icon"></i>
+                            <div class="m-2">
+                                <p style="font-size: 1.1rem;"><strong>knowledge about cellular</strong></p>
+                                <p>&bull; LTE, LTE-M, Nb-IoT, 5G RED CAP</p>
+                            </div>
+                        </div>
+                        <div class="col-6 skills_item skills_data">
+                            <i class="bi bi-terminal-fill skills_icon"></i>
+                            <div class="m-2">
+                                <p style="font-size: 1.1rem;"><strong>Strong Hardware design</strong></p>
+                                <p>&bull; Using Easyeda, Altium</p>
+                            </div>
+                        </div>
+                        <div class="col-6 skills_item skills_data">
+                            <i class="bi bi-terminal-fill skills_icon"></i>
+                            <div class="m-2">
+                                <p style="font-size: 1.1rem;"><strong>Using Standart to code</strong></p>
+                                <p>&bull; Misa C</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div>
+                    <div class="skills_data">
+                        <div class="skills_names">
+                            <i class='bx bxl-tailwind-css skills_icon'></i>
+                            <span class="skills_name">TAILWIND</span>
+                        </div>
+                        <div class="skills_bar skills_"></div>
+                    </div>
+
+                    
+                    <div class="skills_data">
+                        <div class="skills_names">
+                            <i class='bx bxl-javascript skills_icon'></i>
+                            <span class="skills_name">JAVASCRIPT</span>
+                        </div>
+                        <div class="skills_bar skills_"></div>
+                    </div>
+
+                    <div class="skills_data">
+                        <div class="skills_names">
+                            <i class='bx bxl-react skills_icon'></i>
+                            <span class="skills_name">REACT</span>
+                        </div>
+                        <div class="skills_bar skills_"></div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="skills_data">
+                        <div class="skills_names">
+                            <i class='bx bxl-nodejs skills_icon'></i>
+                            <span class="skills_name">NODE JS</span>
+                        </div>
+                        <div class="skills_bar skills_"></div>
+                    </div>
+
+                    <div class="skills_data">
+                        <div class="skills_names">
+                            <i class='bx bxl-java skills_icon'></i>
+                            <span class="skills_name">SPRING BOOT</span>
+                        </div>
+                        <div class="skills_bar skills_"></div>
+                    </div>
+
+                    <div class="skills_data">
+                        <div class="skills_names">
+                            <i class='bx bxl-postgresql skills_icon'></i>
+                            <span class="skills_name">POSTGRESQL</span>
+                        </div>
+                        <div class="skills_bar skills_"></div>
+                    </div>
+                </div> -->
+
+            </div>
+        </section>
+
+        <!-- WORK -->
+        <section class="work section" id="work">
+            <h2 class="section-title">Projects</h2>
+            <div class="container">
+                <!-- _card 1 -->
+                <div class="_card ">
+                    <div id="carousel1" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="/assets/img/mev1.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/assets/img/mev1.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/assets/img/mev1.png" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel1"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel1"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <!-- <img src="/assets/img/mev1.png" alt="Distant Galaxy" class="_card-image"> -->
+                    <div class="_card-content">
+                        <h2 class="_card-title">Distant Galaxy</h2>
+                        <div class="project_commnent">
+                            <p>this is my first project with all my abilyti i think it somehow will help organization
+                                company solve their problem</p>
+                        </div>
+                        <div class="price-section">
+                            <div class="price-column">
+                                <p class="price-label">Times Spent</p>
+                                <p class="price-value">6 Mounth</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- _card 2 -->
+                <div class="_card">
+                    <div id="carousel2" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="/assets/img/mev1.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/assets/img/mev1.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/assets/img/mev1.png" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel2"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel2"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <div class="_card-content">
+                        <h2 class="_card-title">Distant Galaxy</h2>
+                        <div class="project_commnent">
+                            <p>this is my first project with all my abilyti i think it somehow will help organization
+                                company solve their problem</p>
+                        </div>
+                        <div class="price-section">
+                            <div class="price-column">
+                                <p class="price-label">Times Spent</p>
+                                <p class="price-value">6 Mounth</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- _card 3 -->
+                <div class="_card">
+                    <div id="carousel3" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="/assets/img/mev1.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/assets/img/mev1.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/assets/img/mev1.png" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel3"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel3"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <div class="_card-content">
+                        <h2 class="_card-title">Distant Galaxy</h2>
+                        <div class="project_commnent">
+                            <p>this is my first project with all my abilyti i think it somehow will help organization
+                                company solve their problem</p>
+                        </div>
+                        <div class="price-section">
+                            <div class="price-column">
+                                <p class="price-label">Times Spent</p>
+                                <p class="price-value">6 Mounth</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a href="https://drive.google.com/file/d/1-P5JXTpMd4jV1wFF90RQISh8MzDw-sfl/view?usp=sharing" target="_blank"
+                class="button cv">Download
+                CV</a>
+        </section>
+
+        <section class="work section" id="work">
+            <h2 class="section-title">Activity</h2>
+            <div class="work_container bd-grid">
+
+                <a href="https://www.artemis-dev.com/" target="_blank" class="work_img">
+                    <img src="/assets/img/artemis.png" alt="">
+                </a>
+
+                <a href="https://www.qr-food.com/" target="_blank" class="work_img">
+                    <img src="/assets/img/qrfood.png" alt="">
+                </a>
+
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section class="contact section" id="contact">
+            <h2 class="section-title">Contact</h2>
+            <div class="contact_container bd-grid">
+                <form name="contact" method="POST" class="contact_form" data-netlify="true"
+                    data-netlify-recaptcha="true">
+                    <input type="text" name="name" placeholder="Name" class="contact_input" required>
+                    <input type="email" name="email" placeholder="Email" class="contact_input" required>
+                    <textarea name="text" id="" cols="0" rows="10" class="contact_input" required></textarea>
+
+                    <div data-netlify-recaptcha="true" class="contact_input captcha"></div>
+
+                    <input type="submit" value="Send" class="contact_button button">
+                </form>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p class="footer_title">HIEU NGO</p>
+            <div class="footer_social">
+                <a href="https://www.facebook.com/magicpojska/" class="footer_icon"><i class='bx bxl-facebook'></i></a>
+                <a href="https://www.instagram.com/magic_pojska/" class="footer_icon"><i
+                        class='bx bxl-instagram'></i></a>
+                <a href="https://twitter.com/magicpojska" class="footer_icon"><i class='bx bxl-twitter'></i></a>
+            </div>
+            <p>&#169; 2021 copyright all right reserved</p>
+        </footer>
+    </main>
+
+
+
+    <!-- Scroll -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- Autowriter -->
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
+    <!-- Particles -->
+    <script src="./assets/js/particles.js"></script>
+
+    <!-- Javascript -->
+    <script src=" /assets/js/app.js"></script>
+
+    <!-- boxicons -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
