@@ -902,3 +902,51 @@ body.dark .experience_title {
 body.dark .experience_description {
   color: #e0e0e0;
 }
+
+/* Add this to your existing CSS */
+@media screen and (max-width: 768px) {
+  .home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: auto;
+    /* Allow the section to adjust its height */
+  }
+
+  .home_img {
+    order: 1;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+
+  .home_img img {
+    width: 200px;
+    /* Adjust size for mobile */
+    height: auto;
+  }
+
+  .home_data {
+    order: 2;
+    text-align: center;
+  }
+
+  .home_social {
+    order: 3;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+  }
+
+  .home_social-icon {
+    margin-right: 1rem;
+  }
+
+  .home_social-icon:last-child {
+    margin-right: 0;
+  }
+}
