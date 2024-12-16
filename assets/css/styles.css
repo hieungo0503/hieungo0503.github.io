@@ -913,7 +913,7 @@ body.dark .experience_description {
     justify-content: flex-start;
     height: auto;
     /* Allow the section to adjust its height */
-    padding-top: 3rem;
+    padding-top: 5rem;
   }
 
   .home_img {
@@ -963,11 +963,13 @@ body.dark .experience_description {
     text-align: center;
   }
 
-
-
   .about_img img {
     width: 200px;
     /* Adjust size for mobile */
     height: auto;
+  }
+
+  .about {
+    padding-top: 10rem;
   }
 }
