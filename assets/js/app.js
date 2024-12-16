@@ -53,6 +53,40 @@ function linkAction() {
 
 navLink.forEach((n) => n.addEventListener("click", linkAction));
 
+/*Active auto menu*/
+
+// Get all sections that have an ID defined
+const sections = document.querySelectorAll("section[id]");
+
+// Add scroll event listener
+window.addEventListener("scroll", navHighlighter);
+
+function navHighlighter() {
+  // Get current scroll position
+  let scrollY = window.pageYOffset;
+
+  // Loop through sections to get height, top and ID values for each
+  sections.forEach(current => {
+    const sectionHeight = current.offsetHeight;
+    const sectionTop = current.offsetTop - 50; // Adjust offset as needed
+    const sectionId = current.getAttribute("id");
+
+    // Check if current scroll position is within current section
+    if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+      // Remove active class from all nav items
+      document.querySelectorAll('.nav_link').forEach(link => {
+        link.classList.remove('_active');
+      });
+
+      // Add active class to corresponding nav item
+      document.querySelector(`.nav_link[href*=${sectionId}]`).classList.add('_active');
+    }
+  });
+}
+
+// Call once on load to set initial active state
+navHighlighter();
+
 /*Auto write text*/
 
 var app = document.getElementById("autoWrite");
@@ -144,6 +178,22 @@ sr.reveal(".price-section", {
   origin: "bottom"
 });
 
+/*SCROLL ACTIVITY*/
+sr.reveal(".work_container", {
+  origin: "bottom",
+  distance: "50px",
+  duration: 1000,
+});
+
+sr.reveal(".work_img", {
+  interval: 300,
+  distance: "50px",
+  origin: "left",
+  duration: 800,
+  scale: 0.85,
+  opacity: 0,
+  easing: 'ease-in-out'
+});
 /*SCROLL CONTACT*/
 sr.reveal(".contact_input", { interval: 200 });
 
