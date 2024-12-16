@@ -81,6 +81,34 @@ sr.reveal(".home_social-icon", { interval: 200 });
 sr.reveal(".about_img", {});
 sr.reveal(".about_subtitle", { delay: 400 });
 sr.reveal(".about_text_container", { delay: 400 });
+// Add these new animations for the education/experience cards
+sr.reveal(".col-md-4", {
+  interval: 200,   // Cards appear one after another
+  distance: "50px",
+  duration: 1000,
+  origin: "bottom",
+  scale: 0.85
+});
+
+// Animate elements inside each card
+sr.reveal(".icon-large", {
+  delay: 200,
+  distance: "30px",
+  origin: "top"
+});
+
+sr.reveal(".custom-underline", {
+  delay: 300,
+  distance: "30px",
+  origin: "left"
+});
+
+sr.reveal(".mb-0", {
+  delay: 400,
+  distance: "20px",
+  origin: "bottom",
+  interval: 200
+});
 
 
 /*SCROLL SKILLS*/
@@ -89,8 +117,32 @@ sr.reveal(".skills_text", {});
 sr.reveal(".skills_data", { interval: 200 });
 sr.reveal(".skills_img", { delay: 600 });
 
-/*SCROLL WORK*/
-sr.reveal(".work_img", { interval: 200 });
+/*SCROLL Projects*/
+sr.reveal("._card", {
+  interval: 200,
+  distance: "50px",
+  duration: 1000,
+  origin: "bottom",
+  scale: 0.85
+});
+// For elements inside cards
+sr.reveal("._card-title", {
+  delay: 200,
+  distance: "30px",
+  origin: "left"
+});
+
+sr.reveal(".project_commnent", {
+  delay: 300,
+  distance: "30px",
+  origin: "right"
+});
+
+sr.reveal(".price-section", {
+  delay: 400,
+  distance: "30px",
+  origin: "bottom"
+});
 
 /*SCROLL CONTACT*/
 sr.reveal(".contact_input", { interval: 200 });
