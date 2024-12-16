@@ -150,6 +150,44 @@ sr.reveal(".skills_subtitle", {});
 sr.reveal(".skills_text", {});
 sr.reveal(".skills_data", { interval: 200 });
 sr.reveal(".skills_img", { delay: 600 });
+/*SCROLL EXPERIENCE*/
+// For the section title
+sr.reveal(".skills .section-title", {
+  duration: 1000,
+  origin: "top",
+  distance: "30px"
+});
+
+// For experience cards
+sr.reveal(".experience_card", {
+  interval: 200,   // Cards appear one after another
+  distance: "50px",
+  duration: 1000,
+  origin: "bottom",
+  scale: 0.85
+});
+
+// For elements inside experience cards
+sr.reveal(".experience_icon", {
+  delay: 200,
+  distance: "30px",
+  origin: "top",
+  interval: 200
+});
+
+sr.reveal(".experience_title", {
+  delay: 300,
+  distance: "30px",
+  origin: "left",
+  interval: 200
+});
+
+sr.reveal(".experience_description", {
+  delay: 400,
+  distance: "30px",
+  origin: "right",
+  interval: 200
+});
 
 /*SCROLL Projects*/
 sr.reveal("._card", {
