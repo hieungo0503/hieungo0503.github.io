@@ -217,20 +217,27 @@ sr.reveal(".price-section", {
 });
 
 /*SCROLL ACTIVITY*/
-sr.reveal(".work_container", {
+sr.reveal(".activity-carousel-container", {
   origin: "bottom",
   distance: "50px",
   duration: 1000,
+  delay: 200,
+  scale: 0.85
 });
 
-sr.reveal(".work_img", {
-  interval: 300,
-  distance: "50px",
-  origin: "left",
+sr.reveal(".carousel-indicators", {
+  origin: "bottom",
+  distance: "30px",
   duration: 800,
-  scale: 0.85,
-  opacity: 0,
-  easing: 'ease-in-out'
+  delay: 400
+});
+
+sr.reveal(".carousel-control-prev, .carousel-control-next", {
+  origin: "right",
+  distance: "30px",
+  duration: 800,
+  delay: 600,
+  interval: 200
 });
 /*SCROLL CONTACT*/
 sr.reveal(".contact_input", { interval: 200 });

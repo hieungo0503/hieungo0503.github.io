@@ -973,3 +973,86 @@ body.dark .experience_description {
     padding-top: 10rem;
   }
 }
+
+/* Option 1: Container approach */
+.activity-carousel-container {
+  max-width: 800px;
+  /* adjust width as needed */
+  margin: 0 auto;
+  /* center the carousel */
+}
+
+/* Option 2: Direct image styling */
+.carousel-img {
+  height: 400px;
+  /* adjust height as needed */
+  object-fit: cover;
+  /* maintains aspect ratio */
+}
+
+/* Enhanced carousel styling */
+.activity-carousel-container {
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.carousel {
+  background: #191a20;
+}
+
+.carousel-img {
+  height: 500px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.carousel-item:hover .carousel-img {
+  transform: scale(1.05);
+}
+
+/* Enhanced navigation buttons */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 50px;
+  height: 50px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(400%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.carousel:hover .carousel-control-prev,
+.carousel:hover .carousel-control-next {
+  opacity: 1;
+}
+
+.carousel-indicators {
+  margin-bottom: 0;
+  padding: 10px 0;
+}
+
+.carousel-indicators button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin: 0 5px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-indicators button.active {
+  background-color: var(--first-color);
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .carousel-img {
+    height: 300px;
+  }
+}
