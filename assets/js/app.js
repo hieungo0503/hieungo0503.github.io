@@ -1,4 +1,3 @@
-
 /*Intro animation*/
 const intro = document.querySelector(".intro");
 const logo = document.querySelector(".logo-header");
@@ -103,6 +102,12 @@ const sr = ScrollReveal({
   distance: "40px",
   duration: 2000,
   reset: true,
+  mobile: true,
+  viewFactor: 0.2,
+  viewOffset: {
+    top: 50,
+    bottom: 50
+  }
 });
 
 /*SCROLL HOME*/
