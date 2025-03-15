@@ -3,26 +3,28 @@ const intro = document.querySelector(".intro");
 const logo = document.querySelector(".logo-header");
 const logoSpan = document.querySelectorAll(".logo");
 
-window.addEventListener("DOMContentLoaded", () => {
-  logoSpan.forEach((span, idx) => {
-    setTimeout(() => {
-      span.classList.add("appear");
-    }, (idx + 1) * 90);
-  });
-
-  setTimeout(() => {
+if (intro && logo && logoSpan.length > 0) {
+  window.addEventListener("DOMContentLoaded", () => {
     logoSpan.forEach((span, idx) => {
       setTimeout(() => {
-        span.classList.remove("appear");
-        span.classList.add("fade");
-      }, (idx + 1) * 80);
+        span.classList.add("appear");
+      }, (idx + 1) * 90);
     });
-  }, 1500);
 
-  setTimeout(() => {
-    intro.style.top = "-100vh";
-  }, 2000);
-});
+    setTimeout(() => {
+      logoSpan.forEach((span, idx) => {
+        setTimeout(() => {
+          span.classList.remove("appear");
+          span.classList.add("fade");
+        }, (idx + 1) * 80);
+      });
+    }, 1500);
+
+    setTimeout(() => {
+      intro.style.top = "-100vh";
+    }, 2000);
+  });
+}
 
 /*Show menu*/
 const showMenu = (toggleId, navID) => {
@@ -90,11 +92,13 @@ navHighlighter();
 
 var app = document.getElementById("autoWrite");
 
-var typewriter = new Typewriter(app, {
-  strings: ["R&D Developer", "Hardware Developer", "Firmware Developer", "Mobile Developer"],
-  loop: true,
-  autoStart: true,
-});
+if (app) {
+  var typewriter = new Typewriter(app, {
+    strings: ["R&D Developer", "Hardware Developer", "Firmware Developer", "Mobile Developer"],
+    loop: true,
+    autoStart: true,
+  });
+}
 
 /*===== SCROLL REVEAL ANIMATION =====*/
 const sr = ScrollReveal({
